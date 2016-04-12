@@ -1,0 +1,18 @@
+{
+  "name": "crud2",
+  "homepage": "https://github.com/BLMir/crud2",
+  "authors": [
+    "biel mir <iambielmir@gmail.com>"
+  ],
+  "description": "",
+  "main": "web/assets/vendor",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ]
+}
