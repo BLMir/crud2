@@ -22,8 +22,8 @@ class User extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="role", type="string", columnDefinition="ENUM('ROLE_PROFESSIONAL', 'ROLE_USER')", length=50)
-     * @Assert\Choice(choices = {"ROLE_PROFESSIONAL", "ROLE_USER"})
+     * @ORM\Column(name="role", type="string", columnDefinition="ENUM('ROLE_ADMIN', 'ROLE_USER')", length=50)
+     * @Assert\Choice(choices = {"ROLE_ADMIN", "ROLE_USER"})
      * @Assert\NotBlank()
      */
     private $role;
@@ -35,25 +35,25 @@ class User extends BaseUser
     }
 
     /**
-     * Set role
+     * Set name
      *
-     * @param string $role
+     * @param string $name
      * @return User
      */
-    public function setRole($role)
+    public function setName($name)
     {
-        $this->role = $role;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get role
+     * Get name
      *
      * @return string 
      */
-    public function getRole()
+    public function getName()
     {
-        return $this->role;
+        return $this->name;
     }
 }
